@@ -1,0 +1,52 @@
+include "109.mayu"
+
+def option KL- = enable
+
+# define function keys
+def key F13 = 0x64
+def key F14 = 0x65
+def key F15 = 0x66
+def key F16 = 0x67
+def key F17 = 0x68
+def key F18 = 0x69
+def key F19 = 0x6a
+
+# MacEisu = HankakuZenkaku, MacKana = HiraganaKatakana
+def key MacEisu = 0x71
+def key MacKana = 0x72
+key U-MacEisu = D-Kanji U-Kanji
+key U-MacKana = D-Hiragana U-Hiragana
+key IC-U-MacEisu = D-Kanji U-Kanji
+key IC-U-MacKana = D-Hiragana U-Hiragana
+
+# CapsLock
+def key MacCapsLock = E0-0x3a
+key MacCapsLock = S-Eisuu
+
+# Pause/Break
+def key MacClear = E0-0x45
+key *MacClear = *Pause
+
+# F13 = PrintScreen
+key *F13 = *PrintScreen
+key *F14 = *ScrollLock
+key *F15 = *NumLock
+key *F16 = *Insert
+
+# Ignore Right-Windows
+key *RightWindows = &Ignore
+
+# RightAlt => Applacation
+mod alt -= RightAlt
+key *RightAlt = *Applications
+
+# Shift+BackSpace => Delete (for wireless keyboard)
+key S-BackSpace = Delete
+
+# Windows + Arrow
+key W-Up = PageUp
+key W-Down = PageDown
+key W-Left = Home
+key W-Right = End
+
+
